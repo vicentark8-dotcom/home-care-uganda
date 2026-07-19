@@ -192,12 +192,28 @@ nav ul li a:hover {
     color: white;
 }
 
+@media (max-width: 900px) {
+    nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 14px 20px;
+        gap: 12px;
+    }
+
+    nav h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
     nav {
-        height: auto;
         flex-direction: column;
-        gap: 14px;
-        padding: 14px 20px;
     }
 
     nav ul {
@@ -221,6 +237,10 @@ nav ul li a:hover {
 
     .hero h1 {
         font-size: 40px;
+    }
+
+    .cards {
+        flex-direction: column;
     }
 
     .hero h3,
